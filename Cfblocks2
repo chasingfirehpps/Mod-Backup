@@ -1,0 +1,21 @@
+ package Blocks;
+ 
+ import cpw.mods.fml.common.registry.GameRegistry;
+ import cpw.mods.fml.common.registry.LanguageRegistry;
+ import net.minecraft.block.Block;
+ 
+ public class Cfblocks2
+ {
+   public static Block Lignite_ore;
+   
+   public static void init()
+   {
+     Lignite_ore = new Lignite_ore(Blockinfo.Lignite_ore_ID);
+     GameRegistry.registerBlock(Lignite_ore, "Lignite_ore");
+   }
+   
+   public static void addNames()
+   {
+     LanguageRegistry.addName(Lignite_ore, "Lignite Ore");
+   }
+ }
