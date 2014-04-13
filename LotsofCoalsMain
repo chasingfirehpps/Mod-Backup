@@ -1,0 +1,85 @@
+package CF.LotsofCoals;
+
+import net.minecraft.block.Block;
+import net.minecraft.world.gen.feature.WorldGenerator;
+import Blocks.Cfblocks;
+import Blocks.Cfblocks1;
+import Blocks.Cfblocks2;
+import Blocks.Cfblocks3;
+import Blocks.Cfblocks4;
+import Blocks.Cfblocks5;
+import Items.Cfitems;
+import Items.Cfitems1;
+import Items.Cfitems2;
+import Items.Cfitems3;
+import Items.Cfitems4;
+import cpw.mods.fml.common.IWorldGenerator;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+@Mod(modid = "LotsofCoals", name = "Lots of Coals", version = "1.0.0")
+public class LotsofCoalsMain {
+
+	@Instance("LotsofCoals")
+	public static LotsofCoalsMain instance;
+	//private GuiHandler guihandler = new GuiHandler();
+	
+
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event) {
+	Cfitems.init();
+	Cfitems1.init();
+	Cfitems2.init();
+	Cfitems3.init();
+	Cfitems4.init();
+	Cfblocks.init();
+	Cfblocks1.init();
+	Cfblocks2.init();
+	Cfblocks3.init();
+	Cfblocks4.init();
+	Cfblocks5.init();
+	GameRegistry.registerFuelHandler(new FuelHandler());
+	GameRegistry.registerFuelHandler(new Fuelhandler1());
+	GameRegistry.registerFuelHandler(new FuelHandler2());
+	GameRegistry.registerFuelHandler(new FuelHandler3());
+	GameRegistry.registerFuelHandler(new FuelHandler4());
+	GameRegistry.registerWorldGenerator(eventmanager());
+	}
+	
+	
+	private IWorldGenerator eventmanager() {
+		// TODO Auto-generated method stub
+		return new EventManager();
+	}
+
+
+	@EventHandler
+	public void load(FMLInitializationEvent event) {
+		Cfitems.addNames();
+		Cfblocks.addNames();
+		Cfitems1.addNames();
+		Cfblocks1.addNames();
+		Cfitems2.addNames();
+		Cfblocks2.addNames();
+		Cfitems3.addNames();
+		Cfblocks3.addNames();
+		Cfitems4.addNames();
+		Cfitems4.registerRecipes();
+		Cfblocks5.registerRecipes();
+		Cfblocks4.addNames();
+		Cfblocks5.addNames();
+
+	worldgen worldGen = new worldgen();
+	GameRegistry.registerWorldGenerator(worldGen); 
+	}
+	}
+	
+
+
+
+
