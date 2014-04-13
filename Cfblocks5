@@ -1,0 +1,32 @@
+package Blocks;
+
+import Items.Cfitems4;
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.item.ItemStack;
+
+public class Cfblocks5
+{
+  public static Block Coal_Pile;
+  
+  public static void init()
+  {
+    Coal_Pile = new Coal_Pile(Blockinfo.Coal_Pile_ID);
+    GameRegistry.registerBlock(Coal_Pile, "Coal_Pile");
+  }
+  
+  public static void addNames()
+  {
+    LanguageRegistry.addName(Coal_Pile, "Coal Pile");
+    
+
+    GameRegistry.addRecipe(new ItemStack(Coal_Pile), new Object[] {
+      "PPP", 
+      "PPP", 
+      "PPP", 
+      Character.valueOf('P'), Cfitems4.PulverizedCoal });
+  }
+  
+  public static void registerRecipes() {}
+}
