@@ -1,0 +1,25 @@
+ package Blocks;
+ 
+ import cpw.mods.fml.common.registry.GameRegistry;
+ import cpw.mods.fml.common.registry.LanguageRegistry;
+ import net.minecraft.block.Block;
+ 
+ public class Cfblocks1
+ {
+   public static Block Bituminous_ore;
+   
+   public static void init()
+   {
+     Bituminous_ore = new Bituminous_ore(Blockinfo.Bituminous_ore_ID);
+     GameRegistry.registerBlock(Bituminous_ore, "Bituminous_ore");
+   }
+   
+   public static void addNames()
+   {
+     LanguageRegistry.addName(Bituminous_ore, "Bituminous Ore");
+   }
+ }
+
+
+
+
