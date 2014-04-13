@@ -1,0 +1,50 @@
+package Blocks;
+
+import Items.Cfitems;
+import java.util.Random;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import net.minecraft.util.Icon;
+
+public class Anthracite_ore
+  extends Block
+{
+  private Icon topIcon;
+  private Icon botIcon;
+  private Icon sideIcon;
+  
+  public Anthracite_ore(int id)
+  {
+    super(id, Material.rock);
+    func_71849_a(CreativeTabs.tabMaterials);
+    func_71848_c(4.0F);
+    func_71884_a(Block.field_71976_h);
+    func_71864_b("Anthracite_ore");
+  }
+  
+  public void func_94332_a(IconRegister register)
+  {
+    this.topIcon = register.func_94245_a("lotsofcoals:anthracite_ore");
+    this.botIcon = register.func_94245_a("lotsofcoals:anthracite_ore");
+    this.sideIcon = register.func_94245_a("lotsofcoals:anthracite_ore");
+  }
+  
+  public Icon func_71858_a(int side, int meta)
+  {
+    if (side == 0) {
+      return this.botIcon;
+    }
+    if (side == 1) {
+      return this.topIcon;
+    }
+    return this.sideIcon;
+  }
+  
+  public int func_71885_a(int par1, Random par2Random, int par3)
+  {
+    return Cfitems.Anthracite.field_77779_bT;
+  }
+}
