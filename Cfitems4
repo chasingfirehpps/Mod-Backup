@@ -1,0 +1,35 @@
+package Items;
+
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
+
+public class Cfitems4 {
+
+	//Pulverized Coal
+	public static Item PulverizedCoal;
+
+	
+	public static void init() {
+		PulverizedCoal = new PulverizedCoal(Iteminfo.PulverizedCoal_ID);}
+		public static void addNames() {
+			LanguageRegistry.addName(PulverizedCoal, Iteminfo.PulverizedCoal_NAME);}
+		{
+			
+		}
+		public static void registerRecipes() {
+			ItemStack PulverizedCoalStack = new ItemStack(Cfitems4.PulverizedCoal, 4);
+			ItemStack coalStack = new ItemStack(Item.coal);
+			ItemStack anthraciteStack = new ItemStack(Cfitems.Anthracite);
+			ItemStack bituminousStack = new ItemStack(Cfitems1.Bituminous);
+			ItemStack ligniteStack = new ItemStack(Cfitems2.Lignite);
+			GameRegistry.addShapelessRecipe(PulverizedCoalStack, coalStack);
+			GameRegistry.addShapelessRecipe(PulverizedCoalStack, anthraciteStack);
+			GameRegistry.addShapelessRecipe(PulverizedCoalStack, bituminousStack);
+			GameRegistry.addShapelessRecipe(PulverizedCoalStack, ligniteStack);
+		}
+		{
+			
+		}
+		}
