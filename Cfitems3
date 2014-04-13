@@ -1,0 +1,23 @@
+package Items;
+
+import net.minecraft.item.Item;
+import cpw.mods.fml.common.registry.LanguageRegistry;
+
+public class Cfitems3 {
+
+	//Peat
+	public static Item Peat;
+
+	
+	public static void init() {
+		Peat = new Peat(Iteminfo.Peat_ID);}
+		public static void addNames() {
+			LanguageRegistry.addName(Peat, Iteminfo.Peat_NAME);}
+		{
+			
+		}
+		{
+			
+		}
+		}
+	
