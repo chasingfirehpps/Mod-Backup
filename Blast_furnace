@@ -1,0 +1,57 @@
+ package Blocks;
+ 
+ import net.minecraft.block.Block;
+ import net.minecraft.block.material.Material;
+ import net.minecraft.client.renderer.texture.IconRegister;
+ import net.minecraft.creativetab.CreativeTabs;
+ import net.minecraft.util.Icon;
+ 
+ public class Blast_furnace
+   extends Block
+ {
+   private Icon topIcon;
+   private Icon botIcon;
+   private Icon sideIcon;
+   private Icon frontIcon;
+   
+   public Blast_furnace(int id)
+   {
+     super(id, Material.iron);
+     setCreativeTab(CreativeTabs.tabBlock);
+     setHardness(3.0F);
+     setStepSound(Block.soundMetalFootstep);
+     setUnlocalizedName("Blast_furnace");
+   }
+   
+   public void registerIcons(IconRegister register)
+   {
+     this.topIcon = register.registerIcon("lotsofcoals:Coal_Furnace_Side");
+     this.botIcon = register.registerIcon("lotsofcoals:Coal_Furnace_Side");
+     this.sideIcon = register.registerIcon("lotsofcoals:Coal_Furnace_Side");
+     this.frontIcon = register.registerIcon("lotsofcoals:Coal_Furnace_Front");
+   }
+   
+   public Icon getIcon(int side, int meta)
+   {
+     if (side == 0) {
+       return this.botIcon;
+     }
+     if (side == 1) {
+       return this.topIcon;
+     }
+     if (side == 2) {
+       return this.frontIcon;
+     }
+     return this.sideIcon;
+   }
+ }
+
+
+
+/* Location:           C:\Users\ijhpp_000\Desktop\
+
+ * Qualified Name:     Blocks.Blast_furnace
+
+ * JD-Core Version:    0.7.0.1
+
+ */
