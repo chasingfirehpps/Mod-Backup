@@ -1,0 +1,21 @@
+package Blocks;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
+import net.minecraft.block.Block;
+
+public class Cfblocks3
+{
+  public static Block Peat;
+  
+  public static void init()
+  {
+    Peat = new Peat(Blockinfo.Peat_ID);
+    GameRegistry.registerBlock(Peat, "Peat");
+  }
+  
+  public static void addNames()
+  {
+    LanguageRegistry.addName(Peat, "Peat");
+  }
+}
