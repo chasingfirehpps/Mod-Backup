@@ -1,0 +1,8 @@
+package Items;
+
+//import net.minecraftforge.common.EnumHelper;
+
+//public class MinersPickAxe {
+
+	//public static MinersPickaxe = EnumHelper.addToolMaterial(MinersPickaxe, 3, 500, 8, 4, 12);
+//}
