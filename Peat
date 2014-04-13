@@ -1,0 +1,60 @@
+ package Blocks;
+ 
+ import Items.Cfitems3;
+ import java.util.Random;
+ import net.minecraft.block.Block;
+ import net.minecraft.block.material.Material;
+ import net.minecraft.client.renderer.texture.IconRegister;
+ import net.minecraft.creativetab.CreativeTabs;
+ import net.minecraft.item.Item;
+ import net.minecraft.util.Icon;
+ 
+ public class Peat
+   extends Block
+ {
+   private Icon topIcon;
+   private Icon botIcon;
+   private Icon sideIcon;
+   
+   public Peat(int id)
+   {
+     super(id, Material.field_76246_e);
+     func_71849_a(CreativeTabs.field_78030_b);
+     func_71848_c(1.5F);
+     func_71884_a(Block.field_71976_h);
+     func_71864_b("Peat");
+   }
+   
+   public void func_94332_a(IconRegister register)
+   {
+     this.topIcon = register.func_94245_a("lotsofcoals:peat_block");
+     this.botIcon = register.func_94245_a("lotsofcoals:peat_block");
+     this.sideIcon = register.func_94245_a("lotsofcoals:peat_block");
+   }
+   
+   public Icon func_71858_a(int side, int meta)
+   {
+     if (side == 0) {
+       return this.botIcon;
+     }
+     if (side == 1) {
+       return this.topIcon;
+     }
+     return this.sideIcon;
+   }
+   
+   public int func_71885_a(int par1, Random par2Random, int par3)
+   {
+     return Cfitems3.Peat.field_77779_bT;
+   }
+ }
+
+
+
+/* Location:           C:\Users\ijhpp_000\Desktop\
+
+ * Qualified Name:     Blocks.Peat
+
+ * JD-Core Version:    0.7.0.1
+
+ */
