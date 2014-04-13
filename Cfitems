@@ -1,0 +1,24 @@
+package Items;
+
+import net.minecraft.item.Item;
+import cpw.mods.fml.common.registry.LanguageRegistry;
+
+public class Cfitems {
+
+	//Anthracite
+	public static Item Anthracite;
+
+	
+	public static void init() {
+		Anthracite = new Anthracite(Iteminfo.Anthracite_ID);}
+		public static void addNames() {
+			LanguageRegistry.addName(Anthracite, Iteminfo.Anthracite_NAME);}
+		{
+			
+		}
+		{
+			
+		}
+		}
+	
+
