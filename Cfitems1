@@ -1,0 +1,23 @@
+package Items;
+
+import net.minecraft.item.Item;
+import cpw.mods.fml.common.registry.LanguageRegistry;
+
+public class Cfitems1 {
+
+		
+		public static Item Bituminous;
+
+		
+		public static void init() {
+			Bituminous = new Bituminous(Iteminfo.Bituminous_ID);}
+			public static void addNames() {
+				LanguageRegistry.addName(Bituminous, Iteminfo.Bituminous_NAME);}
+			{
+				
+			}
+			{ 
+				
+			}
+			}
+
