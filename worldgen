@@ -1,0 +1,64 @@
+package CF.LotsofCoals;
+
+import java.util.Random;
+
+import net.minecraft.world.World;
+import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraft.world.chunk.IChunkProvider;
+import cpw.mods.fml.common.IWorldGenerator;
+
+public class worldgen implements IWorldGenerator { 
+
+	@Override
+	public void generate(Random random, int chunkX, int chunkZ, World world,
+			IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
+		// TODO Auto-generated method stub
+			
+			generate(random, world, chunkX - 7, chunkZ + 0);
+			generate(random, world, chunkX - 7, chunkZ - 1);
+			generate(random, world, chunkX - 7, chunkZ - 2);
+			generate(random, world, chunkX - 6, chunkZ - 3);
+			generate(random, world, chunkX - 6, chunkZ - 4);
+			generate(random, world, chunkX - 5, chunkZ - 5);
+			generate(random, world, chunkX - 4, chunkZ - 6);
+			generate(random, world, chunkX - 3, chunkZ - 6);
+			generate(random, world, chunkX - 2, chunkZ - 7);	
+			generate(random, world, chunkX - 1, chunkZ - 7);
+			generate(random, world, chunkX + 0, chunkZ - 7);
+			generate(random, world, chunkX + 1, chunkZ - 7);
+			generate(random, world, chunkX + 2, chunkZ - 7);
+			generate(random, world, chunkX + 3, chunkZ - 6);
+			generate(random, world, chunkX + 4, chunkZ - 6);
+			generate(random, world, chunkX + 5, chunkZ - 5);
+			generate(random, world, chunkX + 6, chunkZ - 4);
+			generate(random, world, chunkX + 6, chunkZ - 3);
+			generate(random, world, chunkX + 7, chunkZ - 2);
+			generate(random, world, chunkX + 7, chunkZ - 1);
+			generate(random, world, chunkX + 7, chunkZ + 0);
+			generate(random, world, chunkX - 7, chunkZ + 1);
+			generate(random, world, chunkX - 7, chunkZ + 2);
+			generate(random, world, chunkX - 6, chunkZ + 3);
+			generate(random, world, chunkX - 5, chunkZ + 5);
+			generate(random, world, chunkX - 4, chunkZ + 6);
+			generate(random, world, chunkX - 3, chunkZ + 6);
+			generate(random, world, chunkX - 2, chunkZ + 7);	
+			generate(random, world, chunkX - 1, chunkZ + 7);
+			generate(random, world, chunkX + 0, chunkZ + 7);
+			generate(random, world, chunkX + 1, chunkZ + 7);
+			generate(random, world, chunkX + 2, chunkZ + 7);
+			generate(random, world, chunkX + 3, chunkZ + 6);
+			generate(random, world, chunkX + 4, chunkZ + 6);
+			generate(random, world, chunkX + 5, chunkZ + 5);
+			generate(random, world, chunkX + 6, chunkZ + 4);
+			generate(random, world, chunkX + 6, chunkZ + 3);
+			generate(random, world, chunkX + 7, chunkZ + 2);
+			generate(random, world, chunkX + 7, chunkZ + 1);
+		}
+
+	private void generate(Random random, World world, int i, int j) {
+		// TODO Auto-generated method stub
+		}
+	
+		
+	}
+	
