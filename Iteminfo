@@ -1,0 +1,48 @@
+package Items;
+
+public class Iteminfo {
+//Anthracite
+	public static final String Anthracite_TEXTURE_LOCATION = "items";
+	public static int Anthracite_ID;
+	public static final String Anthracite_KEY = "Anthracite";
+	public static final int Anthracite = 3250;
+	public static final String Anthracite_UNLOCALIZED_NAME = "Anthracite";
+	public static final String Anthracite_NAME = "Anthracite";
+	public static final String Anthracite_Icon = "anthracite";
+	
+	//Bituminous
+public static final String Bituminous_TEXTURE_LOCATION = "items";
+public static int Bituminous_ID;
+public static final String Bituminous_KEY = "Bituminous";
+public static final int Bituminous= 3272;
+public static final String Bituminous_UNLOCALIZED_NAME = "Bituminous";
+public static final String Bituminous_NAME = "Bituminous";
+public static final String Bituminous_Icon = "coal_bituminus";
+
+	//Lignite
+public static final String Lignite_TEXTURE_LOCATION = "items";
+public static int Lignite_ID;
+public static final String Lignite_KEY = "Lignite";
+public static final int Lignite= 3272;
+public static final String Lignite_UNLOCALIZED_NAME = "Lignite";
+public static final String Lignite_NAME = "Lignite";
+public static final String Lignite_Icon = "coal_lignite";
+
+//Peat
+public static final String Peat_TEXTURE_LOCATION = "Peat";
+public static int Peat_ID;
+public static final String Peat_KEY = "Peat";
+public static final int Peat= 3273;
+public static final String Peat_UNLOCALIZED_NAME = "Peat";
+public static final String Peat_NAME = "Peat";
+public static final String Peat_Icon = "Peat";
+
+//Pulverized Coal
+public static final String PulverizedCoal_TEXTURE_LOCATION = "PulverizedCoal";
+public static int PulverizedCoal_ID;
+public static final String PulverizedCoal_KEY = "PulverizedCoal";
+public static final int PulverizedCoal= 3274;
+public static final String PulverizedCoal_UNLOCALIZED_NAME = "PulverizedCoal";
+public static final String PulverizedCoal_NAME = "Pulverized Coal";
+public static final String PulverizedCoal_Icon = "coal_dust";
+}
