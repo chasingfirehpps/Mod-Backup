@@ -1,0 +1,23 @@
+package Items;
+
+import net.minecraft.item.Item;
+import cpw.mods.fml.common.registry.LanguageRegistry;
+
+public class Cfitems2 {
+
+	//Lignite
+	public static Item Lignite;
+
+	
+	public static void init() {
+		Lignite = new Lignite(Iteminfo.Lignite_ID);}
+		public static void addNames() {
+			LanguageRegistry.addName(Lignite, Iteminfo.Lignite_NAME);}
+		{
+			
+		}
+		{
+			
+		}
+		}
+	
