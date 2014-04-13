@@ -1,0 +1,31 @@
+ package Blocks;
+ 
+ import cpw.mods.fml.common.registry.GameRegistry;
+ import cpw.mods.fml.common.registry.LanguageRegistry;
+ import net.minecraft.block.Block;
+ 
+ public class Cfblocks
+ {
+   public static Block Anthracite_ore;
+   
+   public static void init()
+   {
+     Anthracite_ore = new Anthracite_ore(Blockinfo.Anthracite_ore_ID);
+     GameRegistry.registerBlock(Anthracite_ore, "Anthracite_ore");
+   }
+   
+   public static void addNames()
+   {
+     LanguageRegistry.addName(Anthracite_ore, "Anthracite Ore");
+   }
+ }
+
+
+
+/* Location:           C:\Users\ijhpp_000\Desktop\
+
+ * Qualified Name:     Blocks.Cfblocks
+
+ * JD-Core Version:    0.7.0.1
+
+ */
